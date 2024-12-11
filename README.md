@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Proje Yönetim Sistemi (Tkinter)
 
 Bu proje, Python ve Tkinter kullanarak masaüstü bir Proje Yönetim Sistemi oluşturmayı sağlar. Uygulama, projeleri, görevleri ve çalışanları yönetmek için kullanıcı dostu bir arayüz sunar.
@@ -47,3 +48,6 @@ Bu proje, Python ve Tkinter kullanarak masaüstü bir Proje Yönetim Sistemi olu
        FOREIGN KEY (project_id) REFERENCES projects(id) ON DELETE CASCADE,
        FOREIGN KEY (employee_id) REFERENCES employees(id) ON DELETE SET NULL
    );
+=======
+# Vtys_Proje
+>>>>>>> f16659b4ad8bfd31ff94168a5bb398961dd23920
