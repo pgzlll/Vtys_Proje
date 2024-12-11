@@ -1,6 +1,8 @@
 import tkinter as tk
 from tkinter import messagebox
 import mysql.connector
+from db_connection import db
+
 
 def add_task():
     def save_task():
@@ -41,3 +43,4 @@ def add_task():
     man_day_entry.pack()
 
     tk.Button(add_window, text="Kaydet", command=save_task).pack()
+    
