@@ -1,6 +1,9 @@
 import tkinter as tk
 from tkinter import messagebox
 import mysql.connector
+from task_add import add_task
+from db_connection import db
+
 
 # Veritabanı bağlantısı
 db = mysql.connector.connect(
@@ -87,5 +90,7 @@ tk.Label(root, text="Proje Yönetim Sistemi", font=("Arial", 20)).pack()
 tk.Button(root, text="Projeleri Görüntüle", command=view_projects, width=30, height=2).pack(pady=10)
 tk.Button(root, text="Yeni Proje Ekle", command=add_project, width=30, height=2).pack(pady=10)
 tk.Button(root, text="Projeyi Sil", command=delete_project, width=30, height=2).pack(pady=10)
+tk.Button(root, text="Yeni Görev Ekle", command=add_task, width=30, height=2).pack(pady=10)
+
 
 root.mainloop()
